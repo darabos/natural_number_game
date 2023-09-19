@@ -1,3 +1,6 @@
+This fork is a version of the Natural Number Game that is compatible with
+[LeanDojo](https://github.com/lean-dojo/LeanDojo).
+
 <h1><span style='color:#ff8c00'> Natural Number Game
 </span></h1>
 
