@@ -24,7 +24,7 @@ a hypothesis `h : c + d = 0` then you can write
 $\le$ is antisymmetric. In other words, if $a\le b$ and $b\le a$ then $a = b$. 
 -/
 theorem le_antisymm (a b : mynat) (hab : a ≤ b) (hba : b ≤ a) : a = b :=
-begin [nat_num_game]
+begin
   cases hab with c hc,
   cases hba with d hd,
   rw hc at hd,

@@ -12,7 +12,7 @@ namespace mynat -- hide
 For all naturals $a$, $m$, $n$, we have $a^{m + n} = a ^ m  a ^ n$.
 -/
 lemma pow_add (a m n : mynat) : a ^ (m + n) = a ^ m * a ^ n :=
-begin [nat_num_game]
+begin
   induction n with t ht,
     rw [add_zero, pow_zero, mul_one],
     refl,

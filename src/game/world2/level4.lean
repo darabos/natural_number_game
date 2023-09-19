@@ -20,7 +20,7 @@ In other words, for all natural numbers $a$ and $b$, we have
 $$ a + b = b + a. $$
 -/
 lemma add_comm (a b : mynat) : a + b = b + a :=
-begin [nat_num_game]
+begin
   induction b with d hd,
   { rw zero_add,
     rw add_zero,

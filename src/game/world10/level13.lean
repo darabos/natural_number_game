@@ -27,7 +27,7 @@ but it's a helpful trick when `rw` is rewriting too much.
 For all naturals $a$, $\operatorname{succ}(a)$ is not at most $a$.
 -/
 theorem not_succ_le_self (a : mynat) : ¬ (succ a ≤ a) :=
-begin [nat_num_game]
+begin
   intro h,
   cases h with c h,
   induction a with d hd,

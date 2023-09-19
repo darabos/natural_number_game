@@ -26,7 +26,7 @@ For any natural number $m$, we have
 $$ 1 \times m = m. $$
 -/
 lemma one_mul (m : mynat) : 1 * m = m :=
-begin [nat_num_game]
+begin
   induction m with d hd,
   {
     rw mul_zero,

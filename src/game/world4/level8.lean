@@ -36,7 +36,7 @@ $$(a+b)^2=a^2+b^2+2ab.$$
 -/
 lemma add_squared (a b : mynat) :
   (a + b) ^ (2 : mynat) = a ^ (2 : mynat) + b ^ (2 : mynat) + 2 * a * b :=
-begin [nat_num_game]
+begin
   rw two_eq_succ_one,
   rw one_eq_succ_zero,
   repeat {rw pow_succ},

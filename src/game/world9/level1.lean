@@ -34,7 +34,7 @@ out that `_` is supposed to be `3 * x + 2 * y + 1`.
 The product of two non-zero natural numbers is non-zero.
 -/
 theorem mul_pos (a b : mynat) : a ≠ 0 → b ≠ 0 → a * b ≠ 0 :=
-begin [nat_num_game]
+begin
   intros ha hb,
   intro hab,
   cases b with b,

@@ -17,7 +17,7 @@ $$
 a\le b\land\lnot(b\le a).$$
 -/
 lemma lt_aux_two (a b : mynat) : succ a ≤ b → a ≤ b ∧ ¬ (b ≤ a) :=
-begin [nat_num_game]
+begin
   intro h,
   split,
   { apply le_trans a (succ a) b,

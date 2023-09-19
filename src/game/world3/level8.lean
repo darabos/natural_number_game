@@ -18,7 +18,7 @@ to have exactly the right tools to do a job.
 Multiplication is commutative.
 -/
 lemma mul_comm (a b : mynat) : a * b = b * a :=
-begin [nat_num_game]
+begin
   induction b with d hd,
   { 
     rw zero_mul,

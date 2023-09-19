@@ -19,7 +19,7 @@ If $a\le b$ then for all $t$, $t+a\le t+b$.
 -/
 theorem add_le_add_left {a b : mynat} (h : a ≤ b) (t : mynat) :
   t + a ≤ t + b :=
-begin [nat_num_game]
+begin
   cases h with c hc,
   use c,
   rw hc,

@@ -13,7 +13,7 @@ Another easy one.
 For all naturals $a$, $0\leq a$.
 -/
 lemma zero_le (a : mynat) : 0 ≤ a :=
-begin [nat_num_game]
+begin
   use a,
   rw zero_add,
   refl,

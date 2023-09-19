@@ -24,7 +24,7 @@ In other words, for all natural numbers $a$, $b$ and $t$, we have
 $$ (a + b) \times t = at + bt. $$
 -/
 lemma add_mul (a b t : mynat) : (a + b) * t = a * t + b * t :=
-begin [nat_num_game]
+begin
   induction b with d hd,
   { 
     rw zero_mul,

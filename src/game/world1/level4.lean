@@ -69,7 +69,7 @@ For all natural numbers $a$, we have
 $$a + \operatorname{succ}(0) = \operatorname{succ}(a).$$
 -/
 lemma add_succ_zero (a : mynat) : a + succ(0) = succ(a) :=
-begin [nat_num_game]
+begin
   rw add_succ,
   rw add_zero,
   refl,

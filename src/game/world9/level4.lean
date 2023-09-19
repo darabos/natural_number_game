@@ -52,7 +52,7 @@ $ ab = ac, $
 then $b = c$.
 -/
 theorem mul_left_cancel (a b c : mynat) (ha : a ≠ 0) : a * b = a * c → b = c :=
-begin [nat_num_game]
+begin
   induction c with d hd generalizing b,
   { rw mul_zero,
     intro h,

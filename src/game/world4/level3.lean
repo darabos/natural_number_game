@@ -12,7 +12,7 @@ namespace mynat -- hide
 For all naturals $a$, $a ^ 1 = a$.
 -/
 lemma pow_one (a : mynat) : a ^ (1 : mynat) = a :=
-begin [nat_num_game]
+begin
   rw one_eq_succ_zero,
   rw pow_succ,
   rw pow_zero,

@@ -13,7 +13,7 @@ Can you find the two-line proof?
 For all naturals $a$, $a\le\operatorname{succ}(a).$
 -/
 lemma le_succ_self (a : mynat) : a ≤ succ a :=
-begin [nat_num_game]
+begin
   use 1,
   refl,
   
