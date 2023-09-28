@@ -35,7 +35,6 @@ begin
 --  exact succ_eq_succ_of_eq,
   { intro H,
     rw H,
-    refl,
   }
 
 

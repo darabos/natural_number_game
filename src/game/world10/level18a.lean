@@ -18,7 +18,6 @@ begin
   cases h with h2 h3,
   apply h3,
   rw h1,
-  refl,
 end
 
 -- I had 
@@ -59,7 +58,6 @@ begin
   rw succ_add,
   rw succ_add,
   rw add_assoc,
-  refl,
 end
 
 theorem lt_trans (a b c : mynat) : a < b → b < c → a < c :=
@@ -91,7 +89,6 @@ begin
     intro h,
     apply h2,
     rw h,
-    refl,
   intro h,
   cases h with h1 h2,
   split,
@@ -181,7 +178,6 @@ begin
   rw hd,
   repeat {rw succ_add},
   rw add_right_comm,
-  refl,
 
 
 end 
@@ -223,7 +219,6 @@ begin
   rw hd,
   rw mul_add,
   use c * d,
-  refl
 end
 
 theorem mul_le_mul_of_nonneg_right (a b c : mynat) : a ≤ b → 0 ≤ c → a * c ≤ b * c :=
@@ -298,7 +293,6 @@ begin
 intro h,
 induction a with t Ht,
   rw [pow_zero, pow_zero],
-  refl,
 rw [pow_succ, pow_succ],
 apply le_mul,
   assumption,

@@ -26,7 +26,6 @@ begin
   { exact add_right_cancel _ _ _}, -- done that way already,
   { intro H, -- H : a = b,
     rw H,
-    refl,
   }
 
 

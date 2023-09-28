@@ -31,7 +31,6 @@ begin
   rw mul_succ,
   rw mul_zero,
   rw zero_add,
-  refl
 
   
 end

@@ -39,7 +39,6 @@ begin
   { rw add_succ,
     rw hd,
     rw add_succ,
-    refl
   }
 end
 

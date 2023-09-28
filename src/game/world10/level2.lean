@@ -16,7 +16,6 @@ lemma le_refl (x : mynat) : x ≤ x :=
 begin
   use 0,
   rw add_zero,
-  refl,
 
 
 end 
@@ -45,7 +44,6 @@ so you don't need to `rw add_zero` either! The proof
 
 ```
 use 0,
-refl,
 ```
 
 works.
