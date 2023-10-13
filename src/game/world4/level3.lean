@@ -17,7 +17,6 @@ begin
   rw pow_succ,
   rw pow_zero,
   rw one_mul,
-  refl,
 
 end
 

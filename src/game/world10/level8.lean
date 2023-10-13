@@ -18,7 +18,6 @@ begin
   use c,
   rw hc,
   rw succ_add,
-  refl,
   
 
 end

@@ -23,7 +23,6 @@ begin
   apply add_left_cancel a,
   rw h,
   rw add_zero,
-  refl,
 
 
 

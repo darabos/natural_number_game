@@ -21,7 +21,6 @@ $$ d+1 = \operatorname{succ}(d). $$
 theorem add_one_eq_succ (d : mynat) : d + 1 = succ d :=
 begin
   rw succ_eq_add_one,
-  refl,
 
 
 
