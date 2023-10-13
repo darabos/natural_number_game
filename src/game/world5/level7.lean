@@ -18,7 +18,7 @@ Whatever the sets $P$ and $Q$ and $F$ are, we
 make an element of $\operatorname{Hom}(\operatorname{Hom}(P,Q),
 \operatorname{Hom}(\operatorname{Hom}(Q,F),\operatorname{Hom}(P,F)))$.
 -/
-example (P Q F : Type) : (P → Q) → ((Q → F) → (P → F)) :=
+lemma example_5_7 (P Q F : Type) : (P → Q) → ((Q → F) → (P → F)) :=
 begin
   intro f,
   intro h,

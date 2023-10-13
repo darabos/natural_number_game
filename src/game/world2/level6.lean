@@ -89,8 +89,9 @@ tactic really), and can nail some really tedious-for-a-human-to-solve
 goals. For example check out this one-line proof:
 -/
 
-example (a b c d e : mynat) :
-(((a+b)+c)+d)+e=(c+((b+e)+a))+d := begin
+lemma example_2_6 (a b c d e : mynat) :
+(((a+b)+c)+d)+e=(c+((b+e)+a))+d := 
+begin
   simp
 end 
 

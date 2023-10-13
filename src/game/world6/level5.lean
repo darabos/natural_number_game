@@ -45,7 +45,7 @@ and now we have to prove $P$, but have a proof handy:
 For any propositions $P$ and $Q$, we always have
 $P\implies(Q\implies P)$. 
 -/
-example (P Q : Prop) : P → (Q → P) :=
+lemma example_6_5 (P Q : Prop) : P → (Q → P) :=
 begin
   intro p,
   intro q,

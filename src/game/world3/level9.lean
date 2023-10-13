@@ -38,7 +38,7 @@ attribute [simp] mul_assoc mul_comm mul_left_comm
 and all of a sudden Lean can automatically do levels which are
 very boring for a human, for example
 -/
-example (a b c d e : mynat) :
+lemma example_3_9 (a b c d e : mynat) :
 (((a*b)*c)*d)*e=(c*((b*e)*a))*d :=
 begin
   simp,

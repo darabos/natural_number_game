@@ -110,7 +110,7 @@ and then finish the level with
 /- Definition
 Given an element of $P$ we can define an element of $U$.
 -/
-example (P Q R S T U: Type)
+lemma example_5_3 (P Q R S T U: Type)
 (p : P)
 (h : P → Q)
 (i : Q → R)

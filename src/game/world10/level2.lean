@@ -30,7 +30,8 @@ attribute [refl] mynat.le_refl
 ...we find that the `refl` tactic will close all goals
 of the form `a ≤ a` as well as all goals of the form `a = a`.
 -/
-example : (0 : mynat) ≤ 0 := begin
+lemma example_10_2 : (0 : mynat) ≤ 0 :=
+begin
   refl
 end
 

@@ -54,7 +54,7 @@ not an element of $P$).
 /- Definition
 Given an element of $P$ we can define an element of $U$.
 -/
-example (P Q R S T U: Type)
+lemma example_5_4 (P Q R S T U: Type)
 (p : P)
 (h : P → Q)
 (i : Q → R)

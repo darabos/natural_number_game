@@ -120,7 +120,7 @@ will close the goal, ultimately defining the function $f(n)=3n+2$.
 /- Definition
 We define a function from mynat to mynat.
 -/
-example : mynat → mynat :=
+lemma example_5_2 : mynat → mynat :=
 begin
   intro n,
   exact 3*n+2,
