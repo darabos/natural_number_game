@@ -44,7 +44,7 @@ and then let's output `p`.
 /- Definition
 We define an element of $\operatorname{Hom}(P,\operatorname{Hom}(Q,P))$.
 -/
-example (P Q : Type) : P → (Q → P) :=
+lemma example_5_5 (P Q : Type) : P → (Q → P) :=
 begin
   intro p,
   intro q,

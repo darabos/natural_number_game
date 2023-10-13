@@ -39,20 +39,20 @@ with `succ_inj` -- `rw` works only with equalities or `↔` statements,
 not implications or functions.
 
 -/
-example {a b : mynat} (h : succ(succ(a)) = succ(succ(b))) :  a = b := 
+lemma example_8_2_1 {a b : mynat} (h : succ(succ(a)) = succ(succ(b))) :  a = b := 
 begin
   apply succ_inj,
   apply succ_inj,
   exact h
 end 
 
-example {a b : mynat} (h : succ(succ(a)) = succ(succ(b))) :  a = b := 
+lemma example_8_2_2 {a b : mynat} (h : succ(succ(a)) = succ(succ(b))) :  a = b := 
 begin
   apply succ_inj,
   exact succ_inj(h),
 end 
 
-example {a b : mynat} (h : succ(succ(a)) = succ(succ(b))) :  a = b := 
+lemma example_8_2_3 {a b : mynat} (h : succ(succ(a)) = succ(succ(b))) :  a = b := 
 begin
   exact succ_inj(succ_inj(h)),
 end 

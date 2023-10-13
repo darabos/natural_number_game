@@ -20,7 +20,7 @@ to an impossible goal, the other to an easy finish.
 If $P$ and $Q$ are true/false statements, then
 $$Q\implies(P\lor Q).$$ 
 -/
-example (P Q : Prop) : Q → (P ∨ Q) :=
+lemma example_7_6 (P Q : Prop) : Q → (P ∨ Q) :=
 begin
   intro q,
   right,

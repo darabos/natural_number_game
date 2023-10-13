@@ -32,7 +32,7 @@ Whatever the sets $P$ and $Q$ and $R$ are, we
 make an element of $\operatorname{Hom}(\operatorname{Hom}(P,\operatorname{Hom}(Q,R)),
 \operatorname{Hom}(\operatorname{Hom}(P,Q),\operatorname{Hom}(P,R)))$.
 -/
-example (P Q R : Type) : (P → (Q → R)) → ((P → Q) → (P → R)) :=
+lemma example_5_6 (P Q R : Type) : (P → (Q → R)) → ((P → Q) → (P → R)) :=
 begin
   intro f,
   intro h,

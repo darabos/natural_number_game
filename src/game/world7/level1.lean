@@ -19,7 +19,7 @@ you will be able to finish off the goals with the `exact` tactic.
 /- Lemma : no-side-bar
 If $P$ and $Q$ are true, then $P\land Q$ is true.
 -/
-example (P Q : Prop) (p : P) (q : Q) : P ∧ Q :=
+lemma example_7_1 (P Q : Prop) (p : P) (q : Q) : P ∧ Q :=
 begin
   split,
   exact p,

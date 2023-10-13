@@ -39,7 +39,7 @@ Whatever the sets $P$ and $Q$ are, we
 make an element of $\operatorname{Hom}(\operatorname{Hom}(P,Q),
 \operatorname{Hom}(\operatorname{Hom}(Q,\emptyset),\operatorname{Hom}(P,\emptyset)))$.
 -/
-example (P Q : Type) : (P → Q) → ((Q → empty) → (P → empty)) :=
+lemma example_5_8 (P Q : Type) : (P → Q) → ((Q → empty) → (P → empty)) :=
 begin
   intros f h p,
   apply h,
